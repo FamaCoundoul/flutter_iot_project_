@@ -302,7 +302,7 @@ class _SettingsPageState extends State<SettingsPage> {
         _lastLat = lat;
         _lastLon = lon;
 
-        // ✅ Affiche LAN (ESP32) au lieu de WAN
+        // Affiche LAN (ESP32) au lieu de WAN
         _locationSubtitle =
         'LAN ESP32: ${espLocalIp ?? "—"} • ${locationLabel.isEmpty ? "Localisation inconnue" : locationLabel}';
 

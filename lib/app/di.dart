@@ -40,9 +40,15 @@ import '../features/thresholds/presentation/bloc/thresholds_bloc.dart';
 final getIt = GetIt.instance;
 
 Future<void> setupDI() async {
+
+
+
+
+
   // ============================================================================
   // CORE - SharedPreferences, Firebase & Config
   // ============================================================================
+
 
   final prefs = await SharedPreferences.getInstance();
   getIt.registerSingleton<SharedPreferences>(prefs);
