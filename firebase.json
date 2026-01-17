@@ -1,0 +1,40 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "flutter-iot-project-11d02",
+          "appId": "1:105800259177:android:5195ee2032a610884974f8",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "flutter-iot-project-11d02",
+          "configurations": {
+            "android": "1:105800259177:android:5195ee2032a610884974f8",
+            "web": "1:105800259177:web:da98d301e1173b764974f8",
+            "windows": "1:105800259177:web:45a4fe7a24398c9e4974f8"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
